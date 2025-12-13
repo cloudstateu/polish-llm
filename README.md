@@ -372,5 +372,5 @@ graph TD
 ## 7. Certyfikat uczestnictwa
 > [!NOTE]
 > Jeśli chciałbyś otrzymać certyfikat Eskadry Bielika potwierdzający udział w warsztatach, proszę wyślij do Kaspra – organizatora wydarzenia w Opolu – na adres cloudkasperpro@gmail.com zrzut ekranu przedstawiający obie uruchomione instancje Cloud Run.
->Podaj swoje imię i nazwisko w tytule E-Maila.
->Dodatkowo w treści e-maila wpisz tajne hasło, które przekaże Ci Trener Eskadry Bielika.
+> Podaj swoje imię i nazwisko w tytule E-Maila.
+> Dodatkowo w treści e-maila wpisz tajne hasło, które przekaże Ci Trener Eskadry Bielika.
