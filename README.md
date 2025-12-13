@@ -48,8 +48,8 @@ Przykładowy kod źródłowy pozwalający na:
 
 5. Sklonuj repozytorium z przykładowym kodem i przejdź do nowoutworzonego katalogu
    ```bash
-   git clone https://github.com/kasperkalfas/eskadra-bielik-misja-opole02.git
-   cd eskadra-bielik-misja-opole02
+   git clone https://github.com/kasperkalfas/eskadra-bielik-misja-opole03.git
+   cd eskadra-bielik-misja-opole03
    ```
 
 6. Zmień nazwę pliku `.env.sample` na `.env`
@@ -67,7 +67,7 @@ Przykładowy kod źródłowy pozwalający na:
 >W terminalu `Cloud Shell` dostępny jest edytor po wybraniu opcji *Open Editor*. W menu "View" jest zaznaczona opcja "Toggle Hidden Files", co pozwala na wyświetlenie ukrytych plików systemowych w eksploratorze projektu. 
 
    ```bash
-   BIELIK_EVENT_ID="bielik-op-02"
+   BIELIK_EVENT_ID="bielik-op-03"
    GOOGLE_CLOUD_LOCATION="europe-west1"  # Europe (Belgium)
    BIELIK_SERVICE_NAME="ollama-bielik-v3"
    BIELIK_MODEL_NAME="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0"
@@ -371,5 +371,5 @@ graph TD
 
 ## 7. Certyfikat uczestnictwa
 > [!NOTE]
-> Jeśli chciałbyś otrzymać certyfikat Eskadry Bielika potwierdzający udział w warsztatach, proszę wyślij do Kaspra – organizatora wydarzenia w Opolu – na adres cloudkasperpro@gmail.com zrzut ekranu przedstawiający obie uruchomione instancje Cloud Run oraz podaj swoje imię i nazwisko.
+> Jeśli chciałbyś otrzymać certyfikat Eskadry Bielika potwierdzający udział w warsztatach, proszę wyślij do Kaspra – organizatora wydarzenia w Opolu – na adres cloudkasperpro@gmail.com zrzut ekranu przedstawiający obie uruchomione instancje Cloud Run oraz podaj swoje imię i nazwisko w tytule E-Maila.
 >Dodatkowo w treści e-maila wpisz tajne hasło, które przekaże Ci Trener Eskadry Bielika.
