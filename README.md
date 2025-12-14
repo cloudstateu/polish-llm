@@ -147,18 +147,6 @@ curl "${OLLAMA_API_BASE}/api/generate" \
 }" | jq -r .response
    ```
 
-Wygeneruj mi dialog dwóch ludzi czekających w kolejce do lekarza w Opolu.
-
-```bash
-curl "${OLLAMA_API_BASE}/api/generate" \
-  -H "Content-Type: application/json" \
-  -d "{
-    \"model\": \"$BIELIK_MODEL_NAME\",
-    \"prompt\": \"Wygeneruj mi dialog dwóch ludzi czekających w kolejce do lekarza w Opolu.\",
-    \"stream\": false
-}" | jq -r .response
-```
-
 Czym jest NFZ i kiedy został utworzony?
 
 ```bash
@@ -193,6 +181,18 @@ curl "${OLLAMA_API_BASE}/api/generate"   -H "Content-Type: application/json"   -
 >[!TIP]
 >Przykład jak opowiada model Bielik.AI 11B
 ![Przykład jak opowiada model 11B](img/image_2025-12-03_234546086.png)
+
+### Przetestujmy teraz temperaturę modelu
+Teraz sprawdzimy, jak parametr temperature wpływa na kreatywność i powtarzalność odpowiedzi modelu.
+Wykonaj to samo zapytanie trzy razy, ustawiając temperaturę na 0.0, i porównaj otrzymane odpowiedzi.
+```bash
+curl "${OLLAMA_API_BASE}/api/generate"   -H "Content-Type: application/json"   -d "{
+    \"model\": \"$BIELIK_MODEL_NAME\",
+    \"prompt\": \"Dokończ tę historię w 2-3 zdaniach: 'Pacjent wszedł do przychodni i powiedział lekarzowi...'\",
+    \"stream\": false,
+    \"options\": {\"temperature\": 0.001, \"num_predict\": 1000}
+}" | jq -r .response
+```
 
 ## 3. Konfiguracja systemów agentowych ADK
 
