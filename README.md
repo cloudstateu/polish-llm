@@ -193,6 +193,17 @@ curl "${OLLAMA_API_BASE}/api/generate"   -H "Content-Type: application/json"   -
     \"options\": {\"temperature\": 0.001, \"num_predict\": 1000}
 }" | jq -r .response
 ```
+Teraz wykonamy to samo zapytanie, ale z temperaturą ustawioną na 0.7.
+To ustawienie pozwala modelowi na większą różnorodność odpowiedzi, przy jednoczesnym zachowaniu sensu i spójności.
+```bash
+curl "${OLLAMA_API_BASE}/api/generate"   -H "Content-Type: application/json"   -d "{
+    \"model\": \"$BIELIK_MODEL_NAME\",
+    \"prompt\": \"Dokończ tę historię w 2-3 zdaniach: 'Pacjent wszedł do przychodni i powiedział lekarzowi...'\",
+    \"stream\": false,
+    \"options\": {\"temperature\": 0.7, \"num_predict\": 1000}
+}" | jq -r .response
+```
+Więcej o temperaturze przeczytaj w dokumentacji ollama [LINK](https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-completion)
 
 ## 3. Konfiguracja systemów agentowych ADK
 
