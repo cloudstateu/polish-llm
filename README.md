@@ -184,7 +184,7 @@ curl "${OLLAMA_API_BASE}/api/generate"   -H "Content-Type: application/json"   -
 
 ### Przetestujmy teraz temperaturę modelu
 Teraz sprawdzimy, jak parametr temperature wpływa na kreatywność i powtarzalność odpowiedzi modelu.
-Wykonaj to samo zapytanie trzy razy, ustawiając temperaturę na 0.0, i porównaj otrzymane odpowiedzi.
+Wykonaj to samo zapytanie trzy razy, ustawiając temperaturę 0.001, i porównaj otrzymane odpowiedzi.
 ```bash
 curl "${OLLAMA_API_BASE}/api/generate"   -H "Content-Type: application/json"   -d "{
     \"model\": \"$BIELIK_MODEL_NAME\",
