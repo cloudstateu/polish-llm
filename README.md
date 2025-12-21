@@ -102,6 +102,7 @@ Przykładowy kod źródłowy pozwalający na:
 
 >[!CAUTION]
 >Flaga `--allow-unauthenticated` udostępnia usługę publicznie w internecie i każdy kto zna URL, może zaczać z niej korzystać. W środowisku produkcyjnym zazwyczaj trzeba tę flagę usunąć i odpowiednio skonfigurować reguły dostępu.
+>```​bash gcloud projects add-iam-policy-binding project-7f3879f0-2feb-446b-a41j --member="serviceAccount:94861095468-compute@developer.gservice```
 
 3. Uruchom poniższą komendę, aby sprawdzić pod jakim URL jest dostępny Bielik
 
