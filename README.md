@@ -377,6 +377,11 @@ graph TD
     ```
 >[!CAUTION]
 >Flaga `--allow-unauthenticated` udostępnia usługę publicznie w internecie i każdy kto zna URL, może zaczać z niej korzystać. W środowisku produkcyjnym zazwyczaj trzeba tę flagę usunąć i odpowiednio skonfigurować reguły dostępu.
+>PROJECT_ID=""
+>PROJECT_NUMBER=$(gcloud projects describe ${PROJECT_ID} --format="value(projectNumber)")
+>gcloud projects add-iam-policy-binding ${PROJECT_ID} \
+> --member="serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com" \
+> --role="roles/storage.admin"
 
 2. Narzędzie `gcloud` stworzy kontener na podstawie konfiguracji zawartej w `adk-agents/Dockerfile` i uruchomi usługę w Cloud Run, podając URL pod którym serwis będzie dostępny
 3. Wywołaj otrzymany URL w przeglądarce WWW aby mieć dostęp do środowiska ADK Web
