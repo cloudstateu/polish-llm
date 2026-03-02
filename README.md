@@ -19,25 +19,16 @@ Przykładowy kod źródłowy pozwalający na:
 
 >[!TIP]
 >Pokażę to krok po kroku w Cloud Shell / konsoli GCP.
->#### 1. Utworzenie nowego projektu
->1. Wejdź do konsoli: [Google Cloud Console](https://console.cloud.google.com/).
->2. U góry, przy nazwie projektu, kliknij rozwijane menu i wybierz **New Project** / **Nowy projekt**.
->3. Podaj:
->   - nazwę projektu,
->   - (opcjonalnie) organizację i folder,
-> 4. Kliknij **Create** / **Utwórz**.
-> 5. Po chwili projekt będzie widoczny w tym samym rozwijanym menu u góry.
->Zapamiętaj **ID projektu** (np. `bielikshowopole02`) – będzie potrzebny w `gcloud`.
->#### 2. Ustawienie projektu jako aktywny w Cloud Shell
+>#### 1. Ustawienie projektu jako aktywny w Cloud Shell
 >W Cloud Shell wpisz:
 >```bash
->gcloud config set project ID_TWOJEGO_NOWEGO_PROJEKTU
+>gcloud config set project opole04-kkalfas
 >```
->#### 3. Sprawdzenie, jaki projekt jest aktywny
+>#### 2. Sprawdzenie, jaki projekt jest aktywny
 >```bash
 >gcloud config get-value project
 >```
->Jeśli komenda zwróci `ID_TWOJEGO_NOWEGO_PROJEKTU`, to znaczy, że nowy projekt jest ustawiony jako aktywny.
+>Jeśli komenda zwróci `opole04-kkalfas`, to znaczy, że nowy projekt jest ustawiony jako aktywny.
 
 ---
 
@@ -47,7 +38,7 @@ Przykładowy kod źródłowy pozwalający na:
 5. Sklonuj repozytorium z przykładowym kodem i przejdź do nowoutworzonego katalogu
    ```bash
    git clone https://github.com/kasperkalfas/eskadra-bielik-misja-opole03.git
-   cd eskadra-bielik-misja-opole03
+   cd polish-llm
    ```
 
 6. Zmień nazwę pliku `.env.sample` na `.env`
