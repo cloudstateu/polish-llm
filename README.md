@@ -11,13 +11,11 @@ Przykładowy kod źródłowy pozwalający na:
 
 ## 1. Przygotowanie projektu Google Cloud
 
-1. Uzyskaj kredyt Cloud **OnRamp**, lub skonfiguruj płatności w projekcie Google Cloud
->[!TIP]
->Możesz sprawdzić dostępność kredytów OnRamp wybierając z menu po lewej stronie: Billing / Credits
+1. Przejdź do **Google Cloud Console**: [console.cloud.google.com](https://console.cloud.google.com)
 
-2. Przejdź do **Google Cloud Console**: [console.cloud.google.com](https://console.cloud.google.com)
+2. Zaloguj się
 
-3. Stwórz nowy projekt Google Cloud i wybierz go aby był aktywny.
+3. Wybierz projekt o nazwie PolishLLMs 	i projekt ID opole04-kkalfas 
 
 >[!TIP]
 >Pokażę to krok po kroku w Cloud Shell / konsoli GCP.
