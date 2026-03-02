@@ -1,4 +1,4 @@
-# Eskadra Bielik - Misja 1 - ADK + Cloud Run + Bielik
+# Polskie Modele LLM - ADK + Cloud Run + Bielik
 Przykładowy kod źródłowy pozwalający na:
 
 * Skonfigurowanie własnej instancji modelu [Bielik](https://ollama.com/SpeakLeash/bielik-4.5b-v3.0-instruct) w oparciu o [Ollama](https://ollama.com/)
@@ -99,7 +99,6 @@ Przykładowy kod źródłowy pozwalający na:
    ```bash
    source reload-env.sh
    ```
-
 
 
 ### Jak sprawdzić, czy nasz Bielik jest gotowy?
@@ -373,8 +372,3 @@ graph TD
 2. Narzędzie `gcloud` stworzy kontener na podstawie konfiguracji zawartej w `adk-agents/Dockerfile` i uruchomi usługę w Cloud Run, podając URL pod którym serwis będzie dostępny
 3. Wywołaj otrzymany URL w przeglądarce WWW aby mieć dostęp do środowiska ADK Web
 
-## 7. Certyfikat uczestnictwa
-> [!NOTE]
-> Jeśli chciałbyś otrzymać certyfikat Eskadry Bielika potwierdzający udział w warsztatach, proszę wyślij do Kaspra – organizatora wydarzenia w Opolu – na adres cloudkasperpro@gmail.com zrzut ekranu przedstawiający obie uruchomione instancje Cloud Run.
-> Podaj swoje imię i nazwisko w tytule E-Maila.
-> Dodatkowo w treści e-maila wpisz tajne hasło, które przekaże Ci Trener Eskadry Bielika.
