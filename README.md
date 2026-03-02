@@ -55,12 +55,6 @@ Przykładowy kod źródłowy pozwalający na:
 >[!TIP]
 >W terminalu `Cloud Shell` dostępny jest edytor po wybraniu opcji *Open Editor*. W menu "View" jest zaznaczona opcja "Toggle Hidden Files", co pozwala na wyświetlenie ukrytych plików systemowych w eksploratorze projektu. 
 
-   ```bash
-   BIELIK_EVENT_ID="bielik-op-03"
-   GOOGLE_CLOUD_LOCATION="europe-west1"  # Europe (Belgium)
-   BIELIK_SERVICE_NAME="ollama-bielik-v3"
-   BIELIK_MODEL_NAME="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0"
-   ```
 >[!IMPORTANT]
 >Jeżeli zmieniasz w `BIELIK_MODEL_NAME` domyślny model Bielika na inną wersję, to zaktualizuj tę informację również w pliku `ollama-bielik/Dockerfile`
 
