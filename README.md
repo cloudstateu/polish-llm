@@ -37,7 +37,7 @@ Przykładowy kod źródłowy pozwalający na:
 
 5. Sklonuj repozytorium z przykładowym kodem i przejdź do nowoutworzonego katalogu
    ```bash
-   git clone https://github.com/kasperkalfas/eskadra-bielik-misja-opole03.git
+   git clone https://github.com/cloudstateu/polish-llm.git
    cd polish-llm
    ```
 
